@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Activation mail</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            min-width: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            background-color: #FAFAFA;
+            color: #222222;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        h1 {
+            
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.25;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-align: center;
+         
+        }
+        p {
+            margin-top: 0;
+            margin-bottom: 24px;
+        }
+        a {
+            color: #000;
+        }
+
+        table td {
+            vertical-align: top;
+        }
+        .email-wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .email-header {
+            background-color: #0070f3;
+            padding: 24px;
+            color: #ffffff;
+        }
+        .email-body {
+            padding: 24px;
+            color: #000;
+        }
+        .email-footer {
+            padding: 24px;
+            color: #000;
+        }
+        .button {
+            display: inline-block;
+            background-color: #0070f3;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="email-wrapper">
+        <div class="email-header">
+            <h1>Welcome to pbtechub App</h1>
+        </div>
+        <div class="email-body">
+            <p>Hellow <%= user.name %>,</p>
+            <p>Thanks for registering with pbtechub. To activate your account please use the folling activation code:</p>
+            <h1><%= activationCode %></h1>
+            <p>Please Enter the this activation code on the activation page within the next 5  minutes</p>
+            <p>If you did not register for a pbtechub account, please ingnore this email</p>
+        </div>
+        <div class="email-footer">
+            <p>If you have any questions please contact us at <a href="mailto:support@pbtechub.com"></a> </p>
+        </div>
+    </div>
+</body>
+</html>
